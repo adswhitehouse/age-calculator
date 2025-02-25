@@ -95,6 +95,20 @@ h1 {
   outline: none;
   flex-grow: 1;
   min-width: 10rem;
+  position: relative;
+}
+
+.input-container input::-webkit-calendar-picker-indicator {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  background-position: calc(100% - 5px);
+  background-size: 1.75rem;
+  cursor: pointer;
 }
 
 .input-container button {
