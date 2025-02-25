@@ -52,6 +52,91 @@ select {
 }
 /* CSS Reset */
 
+/* Body */
 body {
   font-family: "Poppins", serif;
+  background: linear-gradient(to bottom right, #4949ff, #bfbfff);
+  display: flex;
+  align-items: center;
+  padding-inline: 10vw;
+}
+
+/* Calculator Container */
+.calculator-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* Title */
+h1 {
+  color: #fff;
+  font-size: 4rem;
+}
+
+.h1-bottom {
+  color: #fff660;
+}
+
+/* Input */
+.input-container {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  width: 40rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.input-container input {
+  padding: 0.75rem 0.5rem;
+  border-radius: 0.25rem;
+  border: none;
+  outline: none;
+  flex-grow: 1;
+  min-width: 10rem;
+}
+
+.input-container button {
+  padding: 0.75rem 0.5rem;
+  background-color: #fff660;
+  color: #4949ff;
+  padding-inline: 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+/* Age Output */
+.age-output {
+  color: #fff;
+  text-align: center;
+  visibility: hidden;
+}
+
+.age-number {
+  color: #fff660;
+}
+
+/* Media Queries */
+@media screen and (max-width: 50rem) {
+  body {
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .calculator-container {
+    align-items: center;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  .input-container {
+    width: 80vw;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
